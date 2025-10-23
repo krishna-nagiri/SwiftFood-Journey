@@ -5,7 +5,7 @@ I’ll be updating this file daily to document progress, ensure direction, and s
 
 ---
 
-## 🗓️ Day 1 (21 - 10 - 2025)
+## 🗓️ Day 1 (23 - 10 - 2025)
 
 ### ✅ Progress
 - Created the **base Spring Boot project** in **Eclipse IDE**.  
