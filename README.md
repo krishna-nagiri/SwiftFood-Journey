@@ -43,6 +43,13 @@ I’ll be updating this file daily to document progress, ensure direction, and s
  - Created `/add-customer` endpoint mapped to JSP View, Adds a single Customer to db.
  - Modified the database schema to align with the newly added fields, ensuring data persistence consistency.
  - Verified end-to-end data flow — user input → controller → repository → database → confirmation JSP.
+
+ - ![Home Page](Imgs/home.png)
+
+ - ![Add Customer Page](Imgs/Addcustomer.png)
+
+ - ![Customer Added Successfully](Imgs/success.png)
+   
 ### 🧩 Technical Highlights
   - Validated input fields and ensured successful entity persistence in the database.
   - Introduced basic front-end enhancements using JSP with embedded CSS.
