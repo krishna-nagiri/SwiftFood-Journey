@@ -64,3 +64,36 @@ I’ll be updating this file daily to document progress, ensure direction, and s
   -  Re-prioritized tasks to focus on backend logic and data flow stability before revisiting UI design.
     
 
+## 🗓️ Day 3 (26 - 10 - 2025)
+
+### ✅ Progress
+
+ - Introduced the Restaurant module to expand SwiftFood’s backend structure.
+ - Implemented RESTful APIs for managing restaurants using Spring Boot.
+ - Added three primary endpoints:
+
+    - /all-restaurants → Fetch all restaurants.
+    - /add-restaurant → Add a new restaurant to the database.
+    - /find-by-id?restaurantId=RES1001 → Fetch a restaurant by ID using query parameters.
+
+ - Performed API testing using Postman to validate JSON responses and data persistence.
+
+### 📂 Files Created
+  1. Restaurant.java
+     - A Model class for Restaurant Object.
+  2. RestaurantController.java
+      - A Controller to handle all the CURD Operation Requests.
+      - Implemented 3 primary endpoints (mentioned above).
+  3. RestaurantRepo.java
+     - Extended JpaRepository<Restaurant, String> for CRUD operations.
+### 🧩 Technical Highlights
+ - Better exposure to the springboot annotations.
+ - Difference between @RestController(used to pass response Objects(used for testing)) and @Controller(used to redirect to jsp pages)
+ - Gained deep insights about @RequestParam and @PathVariable.
+ - @PathVariable Used when passing variables directly in the URL path (e.g., /find-by-id/RES1001).
+ - @RequestParam Used when sending key-value pairs as query parameters (e.g., /find-by-id?restaurantId=RES1001).
+ -  #### key Highlight : only focused on building logic rather than chasing front-end design.
+### ⚙️ Hurdles & Fixes
+ - Encountered 404 Not Found due to incorrect use of path variables and Apache port conflict.
+ - Fixed by changing the endpoint mapping to use @RequestParam and verifying correct port (8086).
+ - Successfully tested all endpoints via Postman after adjustments.
