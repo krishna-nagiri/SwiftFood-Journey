@@ -77,7 +77,6 @@ I’ll be updating this file daily to document progress, ensure direction, and s
     - /find-by-id?restaurantId=RES1001 → Fetch a restaurant by ID using query parameters.
 
  - Performed API testing using Postman to validate JSON responses and data persistence.
-
 ### 📂 Files Created
   1. Restaurant.java
      - A Model class for Restaurant Object.
