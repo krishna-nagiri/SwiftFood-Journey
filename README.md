@@ -101,9 +101,9 @@ I’ll be updating this file daily to document progress, ensure direction, and s
 
  ### ✅ Progress
   - Created Order and Food classes.
-  - Order class represents the Order related properties like orderId, orderedFoods, restaurant from which the order is placed, Customer who placed the order.
+  - Order class represents the Order related properties like orderId, orderedFoods, restaurant from which the order is placed, Customer who placed the order.<br>
    `Order.java`
-  - Defined as @Entity with primary key `orderId`
+  - Defined as @Entity with primary key `orderId`<br>
    `Food.java`
   - Defined as @Entity with primary key `foodId`
 
