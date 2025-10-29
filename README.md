@@ -96,3 +96,15 @@ I’ll be updating this file daily to document progress, ensure direction, and s
  - Encountered 404 Not Found due to incorrect use of path variables and Apache port conflict.
  - Fixed by changing the endpoint mapping to use @RequestParam and verifying correct port (8086).
  - Successfully tested all endpoints via Postman after adjustments.
+
+## 🗓️ Day 4 (29 - 10 - 2025)
+
+ ### ✅ Progress
+  - Created Order and Food classes.
+  - Order class represents the Order related properties like orderId, orderedFoods, restaurant from which the order is placed, Customer who placed the order.
+   `Order.java`
+  - Defined as @Entity with primary key `orderId`
+   `Food.java`
+  - Defined as @Entity with primary key `foodId`
+
+     
