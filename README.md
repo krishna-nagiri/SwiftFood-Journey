@@ -107,4 +107,33 @@ I’ll be updating this file daily to document progress, ensure direction, and s
    `Food.java`
   - Defined as @Entity with primary key `foodId`
 
-     
+## 🗓️ Day 5 (04 - 11 - 2025)
+
+### ✅ Progress
+ - Completed the database setup for:
+     -  `Customer`, `Restaurant`, `Food`, `Order`, `Ordered_Items`, and `DeliveryPartner` tables.
+       
+ - Designed and implemented the CustomerController for handling:
+     - Registration (Sign-Up)
+     - Login (Email & Password-based authentication)
+     - Session-based access control
+       
+ - Developed a combined Login & Signup page using JSP and dynamic form switching with JavaScript.
+ - Added session validation and cache prevention for secure login and logout flow.
+ - Implemented Logout functionality ensuring users are completely signed out even after server restart.
+### ⚙️ Technical Highlights
+ - Used Spring Boot + JSP + MySQL for full-stack integration.
+ - Implemented secure login logic using @Query and parameter binding to avoid injection.
+ - Added session invalidation and cache headers to prevent back-button access after logout.
+ - Strengthened understanding of HTTP session management, Model handling, and request mapping structure.
+
+### 🧩 Hurdles & Fixes
+
+   | Issue                                  | Root Cause                               | Fix                                                                          |
+   | -------------------------------------- | ---------------------------------------- | ---------------------------------------------------------------------------- |
+   | Login always redirecting to error page | Incorrect SQL query parameter names      | Corrected query to use `email_id` and `customer_password` columns            |
+   | Cached pages visible after logout      | Browser cache storing old pages          | Added `Cache-Control` headers + session validation check                     |
+   | Re-login showing previous session data | Session not invalidated                  | Implemented `session.invalidate()` on logout                                 |
+   | Overwhelming system design complexity  | Jumped ahead to multi-entity interaction | Broke down plan into entity-wise development (starting from Customer module) |
+
+   
