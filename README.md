@@ -136,4 +136,29 @@ I’ll be updating this file daily to document progress, ensure direction, and s
    | Re-login showing previous session data | Session not invalidated                  | Implemented `session.invalidate()` on logout                                 |
    | Overwhelming system design complexity  | Jumped ahead to multi-entity interaction | Broke down plan into entity-wise development (starting from Customer module) |
 
+## 🗓️ Day 6 (07 - 11 - 2025)
+
+ ### ✅ Progress
+ 
+   - Automated ID generation for Restaurant and Food using IdGenerator.
+   - Implemented Restaurant registration & login with BCrypt password hashing and validation.
+   - Added session management for both Customer and Restaurant with proper session checks and logout handling.
+   - Built backend logic for menu management: add, display, and fetch Food items linked to a restaurant.
+   - Integrated Food–Restaurant relationship via JPA (@ManyToOne, @OneToMany) and ensured correct persistence.
+   - Fixed Hibernate lazy-loading and form-binding issues in Food entity.
+     
+ ### ⚙️ Technical Highlights
+ 
+   - Encapsulated all logic in RestaurantService (ID generation, password hashing, menu persistence).
+   - Added native queries in FoodRepo for fetching last ID.
+   - Strengthened understanding of session flow, authentication, and entity relationships.
+
+ ### 🧩 Hurdles & Fixes
    
+  | Issue                         | Cause                            | Fix                                 |
+  | ----------------------------- | -------------------------------- | ----------------------------------- |
+  | - IDs not generated correctly | - Wrong field mapping            | - Moved ID assignment before saving |
+  | - Password login mismatch     | - BCrypt check logic reversed    | - Fixed conditional logic           |
+  | - LazyInitializationException | - Accessing menu outside session | - Fetched data before rendering     |
+  | - Form data not binding       | - Name mismatch in inputs        | - Aligned names with entity fields  |
+
